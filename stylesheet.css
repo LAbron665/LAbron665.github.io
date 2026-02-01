@@ -148,8 +148,8 @@ span.highlight {
 }
 
 .image-hover-container img{
-  width: 100%;
-  height: 100%;
+  width: 10%;
+  height: 10%;
   object-fit: cover;
   display: block;
 }

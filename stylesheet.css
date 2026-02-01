@@ -142,8 +142,8 @@ span.highlight {
 }
 .image-hover-container{
   position: relative;
-  width: 160px;      /* 想多大改这里 */
-  height: 160px;
+  width: 180px;      /* 想多大改这里 */
+  height: 180px;
   overflow: hidden;
 }
 

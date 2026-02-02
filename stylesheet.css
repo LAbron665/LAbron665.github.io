@@ -469,6 +469,114 @@ papertitle a:hover{
   text-underline-offset: 3px;       /* 距离文字的间距，可调 */
   text-decoration-color: rgba(47,111,235,.65); /* 下划线颜色，可调 */
 }
+/* ===== Preprints: lightweight (less important than publications) ===== */
+
+.preprint-title{
+  margin: 34px 0 12px;
+  font-weight: 900;
+  letter-spacing: .2px;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 6px;
+}
+
+/* 不同于 publications：用“点状下划线/虚线”更轻 */
+.preprint-title::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:0;
+  width: 180px;
+  border-bottom: 2px dashed rgba(17,24,39,.18);
+}
+
+.preprint-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* 卡片更轻：细边框、弱阴影、淡背景 */
+.preprint-item{
+  border: 1px solid rgba(17,24,39,.08);
+  border-radius: 14px;
+  background: rgba(17,24,39,.015);
+  padding: 12px 14px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+/* 左侧小圆点（轻量标记），替代 publication 的大图 */
+.preprint-dot{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(47,111,235,.35);
+  margin-top: 7px;
+  flex: 0 0 auto;
+}
+
+.preprint-main{
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.preprint-paper-title{
+  font-weight: 900;
+  font-size: 1.02rem;
+  line-height: 1.25;
+  margin: 0 0 4px;
+}
+
+.preprint-paper-title a{
+  color: #111827;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.preprint-paper-title a:hover{
+  color: #2f6feb;
+  border-bottom-color: rgba(47,111,235,.35);
+}
+
+.preprint-authors{
+  color: #6b7280;
+  font-size: .94rem;
+  line-height: 1.35;
+  margin: 0 0 6px;
+}
+
+.preprint-status{
+  display: inline-block;
+  font-weight: 800;
+  font-size: .78rem;
+  padding: 2px 8px;
+  border-radius: 999px;
+  color: rgba(17,24,39,.75);
+  background: rgba(17,24,39,.06);
+  border: 1px solid rgba(17,24,39,.10);
+  margin-right: 8px;
+  white-space: nowrap;
+}
+
+.preprint-links a{
+  font-weight: 800;
+  font-size: .80rem;
+  color: #2f6feb;
+  text-decoration: none;
+  margin-right: 10px;
+}
+.preprint-links a:hover{
+  text-decoration: underline;
+}
+
+/* 手机端更紧凑 */
+@media (max-width: 900px){
+  .preprint-item{ padding: 11px 12px; }
+}
 
 
 

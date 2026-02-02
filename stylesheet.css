@@ -463,6 +463,12 @@ papertitle a:hover{
   margin: 0 0 16px;
   color: #6b7280;
 }
+.pub-authors strong{
+  text-decoration: underline;
+  text-decoration-thickness: 2px;   /* 下划线粗细，可调 */
+  text-underline-offset: 3px;       /* 距离文字的间距，可调 */
+  text-decoration-color: rgba(47,111,235,.65); /* 下划线颜色，可调 */
+}
 
 
 

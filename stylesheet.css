@@ -265,5 +265,135 @@ span.highlight {
   background: rgba(14,165,233,.14);/* 统一背景：你只改这里 */
   border: 1px solid rgba(14,165,233,.22);
 }
+/* ===== Publications: academic cards ===== */
+
+.pub-card{
+  border: 1px solid rgba(17,24,39,.10);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 1px 0 rgba(17,24,39,.06);
+  padding: 14px 14px;
+  margin: 12px 0;
+}
+
+.pub-table{
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.pub-thumb{
+  width: 26%;
+  vertical-align: middle;
+  text-align: center;
+  padding-right: 18px;
+}
+
+.pub-thumb img{
+  width: 100%;
+  max-width: 220px;
+  border-radius: 12px;
+  border: 1px solid rgba(17,24,39,.10);
+}
+
+.pub-body{
+  width: 74%;
+  vertical-align: middle;
+}
+
+/* 你现在用的是自定义标签 papertext / papertitle / author
+   直接把它们“变成块级 + 学术排版”即可 */
+papertext{ display:block; }
+papertitle{
+  display:block;
+  font-weight: 900;
+  font-size: 1.05rem;
+  line-height: 1.25;
+  margin: 4px 0 6px;
+}
+papertitle a{
+  color: #111827;
+  text-decoration: none;
+}
+papertitle a:hover{
+  color: #2f6feb;
+}
+
+.pub-meta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  align-items:center;
+  margin-bottom: 2px;
+}
+
+.pub-venue{
+  font-weight: 800;
+  font-size: .82rem;
+  padding: 2px 8px;
+  border-radius: 999px;
+  display: inline-block;
+  white-space: nowrap;
+  color: #0ea5e9;
+  background: rgba(14,165,233,.14);
+  border: 1px solid rgba(14,165,233,.22);
+}
+
+.pub-year{
+  font-variant-numeric: tabular-nums;
+  font-weight: 800;
+  font-size: .86rem;
+  color: #6b7280;
+}
+
+.pub-authors{
+  color: #6b7280;
+  font-size: .95rem;
+  line-height: 1.35;
+  margin-top: 2px;
+}
+
+.pub-authors a{
+  color: #6b7280;
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(107,114,128,.45);
+}
+.pub-authors a:hover{
+  color: #2f6feb;
+  border-bottom-color: rgba(47,111,235,.35);
+}
+
+/* 可选：放 PDF/Code/BibTeX 这种小按钮更“学术主页” */
+.pub-links{
+  margin-top: 8px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+.pub-links a{
+  font-weight: 700;
+  font-size: .82rem;
+  padding: 4px 8px;
+  border-radius: 10px;
+  border: 1px solid rgba(17,24,39,.10);
+  text-decoration:none;
+  color: #111827;
+  background:#fff;
+}
+.pub-links a:hover{
+  border-color: rgba(47,111,235,.35);
+  color:#2f6feb;
+}
+
+/* 窄屏时自动上下排（不再挤在一行） */
+@media (max-width: 900px){
+  .pub-thumb, .pub-body{
+    display:block;
+    width:100% !important;
+    padding-right:0;
+  }
+  .pub-thumb{ margin-bottom: 10px; }
+  .pub-thumb img{ max-width: 360px; }
+}
 
 

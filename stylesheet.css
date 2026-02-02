@@ -252,4 +252,18 @@ span.highlight {
   color: var(--accent);
   border-bottom-color: rgba(47,111,235,.35);
 }
+/* 会议名统一样式（一个就够） */
+.news-venue{
+  font-weight: 800;
+  font-size: .82rem;
+  padding: 2px 8px;
+  border-radius: 999px;
+  display: inline-block;
+  margin-left: 6px;
+  line-height: 1.2;
+  color: #0ea5e9;                 /* 统一颜色：你只改这里 */
+  background: rgba(14,165,233,.14);/* 统一背景：你只改这里 */
+  border: 1px solid rgba(14,165,233,.22);
+}
+
 

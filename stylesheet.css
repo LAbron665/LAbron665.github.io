@@ -397,7 +397,7 @@ papertitle a:hover{
 }
 /* 左侧缩略图固定尺寸 */
 .pub-thumb .image-container{
-  width: 260px;      /* 固定宽度：你想更大就改这里 */
+  width: 300px;      /* 固定宽度：你想更大就改这里 */
   height: 110px;     /* 固定高度：你想更高就改这里 */
   overflow: hidden;
   border-radius: 12px;

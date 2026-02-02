@@ -577,6 +577,18 @@ papertitle a:hover{
 @media (max-width: 900px){
   .preprint-item{ padding: 11px 12px; }
 }
+/* oral highlight badge */
+.pub-oral{
+  display: inline-block;
+  font-weight: 900;
+  font-size: .78rem;
+  padding: 2px 8px;
+  border-radius: 999px;
+  color: #b91c1c;                 /* 红字 */
+  background: rgba(239,68,68,.12);/* 淡红底 */
+  border: 1px solid rgba(239,68,68,.25);
+  white-space: nowrap;
+}
 
 
 

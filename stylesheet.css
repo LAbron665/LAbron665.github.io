@@ -422,6 +422,47 @@ papertitle a:hover{
 .pub-thumb .image-container{
   background: rgba(17,24,39,.02);
 }
+/* Publications 标题：渐变下划线 + 右侧标签 */
+.pub-title{
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin: 34px 0 10px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.pub-title h2{
+  margin: 0;
+  font-weight: 900;
+  letter-spacing: .2px;
+}
+
+.pub-title::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:0;
+  width: 260px;              /* 下划线长度，可调 */
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #0ea5e9 0%, #8250df 60%, rgba(130,80,223,0) 100%);
+}
+
+.pub-chip{
+  font-weight: 800;
+  font-size: .80rem;
+  padding: 2px 10px;
+  border-radius: 999px;
+  color: #8250df;
+  background: rgba(130,80,223,.12);
+  border: 1px solid rgba(130,80,223,.18);
+}
+
+.pub-subnote{
+  margin: 0 0 16px;
+  color: #6b7280;
+}
 
 
 

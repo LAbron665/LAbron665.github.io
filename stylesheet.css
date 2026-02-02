@@ -395,5 +395,25 @@ papertitle a:hover{
   .pub-thumb{ margin-bottom: 10px; }
   .pub-thumb img{ max-width: 360px; }
 }
+/* 左侧缩略图固定尺寸 */
+.pub-thumb .image-container{
+  width: 260px;      /* 固定宽度：你想更大就改这里 */
+  height: 110px;     /* 固定高度：你想更高就改这里 */
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid rgba(17,24,39,.10);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 图片填满容器（必要时裁剪） */
+.pub-thumb .image-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* 关键：填满并裁剪 */
+  display: block;
+}
 
 

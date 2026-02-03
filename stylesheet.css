@@ -655,6 +655,45 @@ papertitle a:hover{
   background: rgba(130,80,223,.10);
   border-color: rgba(130,80,223,.18);
 }
+/* ===== top links pills ===== */
+.pill-links{
+  text-align: center;
+  margin: 10px 0 0;
+}
+
+.pill-links a{
+  display: inline-block;
+  margin: 0 8px 8px 0;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: .92rem;
+  text-decoration: none;
+
+  color: rgba(17,24,39,.85);
+  background: rgba(17,24,39,.05);
+  border: 1px solid rgba(17,24,39,.10);
+
+  transition: transform .12s ease, background .12s ease, border-color .12s ease;
+}
+
+.pill-links a:hover{
+  transform: translateY(-1px);
+  background: rgba(47,111,235,.08);
+  border-color: rgba(47,111,235,.22);
+  color: rgba(47,111,235,.95);
+}
+
+.pill-links a:active{
+  transform: translateY(0);
+}
+
+/* 可选：给不同链接一点点区分，但仍保持克制 */
+.pill-links a.pill-primary{
+  background: rgba(47,111,235,.10);
+  border-color: rgba(47,111,235,.20);
+  color: rgba(47,111,235,.95);
+}
 
 
 

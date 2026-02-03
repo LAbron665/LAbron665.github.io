@@ -711,6 +711,23 @@ papertitle a:hover{
   color: rgba(17,24,39,.55);
   letter-spacing: .5px;
 }
+.name-block{
+  text-align: center;
+  margin: 0 0 10px;
+}
+
+.site-name{
+  margin: 0;
+  font-weight: 900;
+}
+
+.site-name-zh{
+  margin-top: 6px;
+  font-size: 1.02rem;
+  font-weight: 800;
+  color: rgba(17,24,39,.55);
+  letter-spacing: .4px;
+}
 
 
 

@@ -728,6 +728,23 @@ papertitle a:hover{
   color: rgba(17,24,39,.55);
   letter-spacing: .4px;
 }
+<div style="text-align:center; margin: 18px 0;">
+  <div style="
+    display:inline-block;
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(17,24,39,.12);
+    background: rgba(17,24,39,.03);
+    color: rgba(17,24,39,.70);
+    font-weight: 800;
+    margin-bottom: 10px;
+  ">
+    Thank you for visiting my homepage.
+  </div>
+
+  <script type="text/javascript" id="clustrmaps"
+    src="//clustrmaps.com/map_v2.js?d=你的参数..."></script>
+</div>
 
 
 

@@ -589,6 +589,72 @@ papertitle a:hover{
   border: 1px solid rgba(239,68,68,.25);
   white-space: nowrap;
 }
+/* ===== Services: clean + academic (not too heavy) ===== */
+
+.services-wrap{
+  margin: 18px 0 28px;
+}
+
+.service-card{
+  border: 1px solid rgba(17,24,39,.08);
+  background: rgba(17,24,39,.015);
+  border-radius: 14px;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+}
+
+.service-head{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.service-icon{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(16,185,129,.45); /* 绿色点，和 News 的蓝区分 */
+}
+
+.service-title{
+  font-weight: 900;
+  letter-spacing: .2px;
+  color: rgba(17,24,39,.88);
+}
+
+.service-chips{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-left: 20px; /* 让 chips 与标题对齐 */
+}
+
+.service-chip{
+  display: inline-block;
+  font-weight: 800;
+  font-size: .84rem;
+  padding: 3px 10px;
+  border-radius: 999px;
+  color: rgba(17,24,39,.78);
+  background: rgba(17,24,39,.06);
+  border: 1px solid rgba(17,24,39,.10);
+  white-space: nowrap;
+}
+
+/* 会议 chips 稍微偏蓝一点 */
+.service-chip.conf{
+  color: rgba(47,111,235,.95);
+  background: rgba(47,111,235,.10);
+  border-color: rgba(47,111,235,.18);
+}
+
+/* 期刊 chips 稍微偏紫一点 */
+.service-chip.jour{
+  color: rgba(130,80,223,.95);
+  background: rgba(130,80,223,.10);
+  border-color: rgba(130,80,223,.18);
+}
 
 
 

@@ -694,6 +694,9 @@ papertitle a:hover{
   border-color: rgba(47,111,235,.20);
   color: rgba(47,111,235,.95);
 }
+.pill-links a{
+  box-shadow: 0 1px 0 rgba(17,24,39,.06);
+}
 
 
 

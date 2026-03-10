@@ -796,4 +796,8 @@ papertitle a:hover{
 .teaching-term {
   font-style: italic;
 }
-
+.teaching-title{
+  margin:0;
+  font-size:26px;
+  font-weight:700;
+}

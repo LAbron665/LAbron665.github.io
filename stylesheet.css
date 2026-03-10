@@ -767,6 +767,30 @@ papertitle a:hover{
   <script type="text/javascript" id="clustrmaps"
     src="//clustrmaps.com/map_v2.js?d=你的参数..."></script>
 </div>
+.section-title{
+  margin-bottom:6px;
+}
 
+.section-line{
+  width:120px;
+  height:2px;
+  background:#6fb6e8;
+  margin-bottom:18px;
+  border-radius:2px;
+}
+.teaching-list{
+  margin:0;
+  padding-left:26px;
+  line-height:1.9;
+}
+
+.teaching-list li{
+  margin-bottom:8px;
+  font-size:17px;
+}
+
+.teaching-term{
+  font-style:italic;
+}
 
 
